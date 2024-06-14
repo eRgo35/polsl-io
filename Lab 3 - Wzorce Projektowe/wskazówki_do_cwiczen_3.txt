@@ -1,0 +1,30 @@
+aktualizacja: 31.05.2023
+Uruchamiamy wykorzystując RELEASE
+
+0. Etap:
+a) stworzyć klasę abstrakcyjną z dwoma metodami. Zwrócić uwagę, jakie zmienne będą potrzebne dla różnych funkcji aktywacji i ich pochodnych
+Obie metody niech zwracają double (output jako referencja w funkcji aktywacji nie działa poprawnie).
+b) stworzyć 4 klasy (dla każdej z funkcji aktywacji), które dziedziczą po klasie abstrakcyjnej
+(w c++ wyznaczamy Arcus tangens przez funkcję atan) 
+
+
+
+1. Etap: zmiany tylko dla klasy Neuron
+- Wykorzystać klasę abstrakcyjną i ich metody w klasie Neuron 
+- dla początkowego sprawdzenia, czy funkcje działają poprawnie w konstruktorze domyślnym proszę od razu wybierać jedną z 4 funkcji aktywacji
+Sprawdzić wyniki dla 4 funkcji:
+najszybszy ReLU potem fun. sigmoidalna, Tanh, najwolniejszy ArcTan.
+Wynik dla fun. sigmoidalna wynoszą więcej niż 0.82
+
+Można po zrobieniu tego etapu pokazać, że działa program
+
+
+
+2. Etap
+- stworzyć konstruktor 1 argumentowy dla klasy Neuron od wybieranej funkcji aktywacji
+- zrobić konieczne poprawki w NeuralNet, teraz tu można z góry w konstruktorze narzucać funkcję aktywacji
+
+3. Etap
+Zrobić konieczne poprawki, aby w main wybierać funkcję aktywacji (w NeuralNet już jej nie narzucamy z góry)
+Można, ale nie trzeba wykorzystać singleton.
+Proszę w pliku main wybierać od razu funkcję aktywacji, tak, aby ewentualne warunki wykonywały się tylko raz (przykładowo w klasie Neuron NIE wykorzystujemy 'if', ani 'switch', bo to oznaczałoby, że dla każdego pojedynczego neuronu wywołujemy porównania).
