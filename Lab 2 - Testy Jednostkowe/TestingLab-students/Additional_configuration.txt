@@ -1,0 +1,6 @@
+In order to get the required Google Test package to work, all you need to do is:
+
+1. In Visual Studio 2022, navigate to the Tools tab in the topmost menu bar, select NuGet Package Manager and open the Package Manager Console.
+In short: Tools -> NuGet Package Manager -> Package Manager Console
+
+2. In the newly opened console window run the command: Update-Package -reinstall

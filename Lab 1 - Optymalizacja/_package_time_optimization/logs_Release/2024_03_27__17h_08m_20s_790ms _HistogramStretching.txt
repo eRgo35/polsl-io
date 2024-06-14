@@ -1,0 +1,18 @@
+Your optimization:
+	Average: 42.031260
+	Std dev: 0.055327
+	Minimum: 41.808900
+	Maximum: 42.426900
+
+Before optimization:
+	Average: 546.252950
+	Std dev: 1.000402
+	Minimum: 543.630600
+	Maximum: 549.416500
+
+Reference optimization:
+	Average: 20.596900
+	Std dev: 0.036208
+	Minimum: 20.226700
+	Maximum: 21.440400
+
