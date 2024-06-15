@@ -31,6 +31,12 @@
     <Filter Include="Header Files\GeneticAlgorithm">
       <UniqueIdentifier>{063441fd-3d99-4ddb-8dfb-88641616d77f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ActivationFunction">
+      <UniqueIdentifier>{f7421c13-d4b7-4d74-ac7d-7f0d24ab9863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ActivationFunction">
+      <UniqueIdentifier>{63129231-d41b-430d-a583-e4edfc8ca564}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Exceptions\DifferentSizesOfVectors.h">
@@ -66,6 +72,24 @@
     <ClInclude Include="..\LoadingDatasetFunctions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\ActivationFunction\ActivationFunction.h">
+      <Filter>Header Files\ActivationFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ActivationFunction\ArcTan.h">
+      <Filter>Header Files\ActivationFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ActivationFunction\ReLU.h">
+      <Filter>Header Files\ActivationFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ActivationFunction\Sigmoidal.h">
+      <Filter>Header Files\ActivationFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ActivationFunction\Tanh.h">
+      <Filter>Header Files\ActivationFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ActivationFunction\ActiveActivationFunction.h">
+      <Filter>Header Files\ActivationFunction</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Exceptions\DifferentSizesOfVectors.cpp">
@@ -97,6 +121,24 @@
     </ClCompile>
     <ClCompile Include="..\main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ActivationFunction\ActivationFunction.cpp">
+      <Filter>Source Files\ActivationFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ActivationFunction\ArcTan.cpp">
+      <Filter>Source Files\ActivationFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ActivationFunction\ReLU.cpp">
+      <Filter>Source Files\ActivationFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ActivationFunction\Sigmoidal.cpp">
+      <Filter>Source Files\ActivationFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ActivationFunction\Tanh.cpp">
+      <Filter>Source Files\ActivationFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ActivationFunction\ActiveActivationFunction.cpp">
+      <Filter>Source Files\ActivationFunction</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

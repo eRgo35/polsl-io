@@ -50,7 +50,14 @@ vector<Neuron> CreateSingleLayer(int number_of_neurons) {
     vector<Neuron> temp_neurons_layer;
     for(int i = 0; i < number_of_neurons; i++)
     {
-        Neuron myNeuron;
+        // Neuron myNeuron;
+        
+        // Activation* sigm = new SigmoidalActivation();
+        // Neuron myNeuron(sigm);
+        
+        ActiveActivationFunction& func = ActiveActivationFunction::getFunction();
+        Neuron myNeuron(func.getActivationFunction());
+
         temp_neurons_layer.push_back(myNeuron);
     }
     return temp_neurons_layer;

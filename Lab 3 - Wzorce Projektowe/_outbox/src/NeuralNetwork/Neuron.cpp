@@ -8,6 +8,16 @@ Neuron::Neuron() {
     Input = 0;
     Output = 0;
     Propagated_Error = 0;
+       
+    activation_function = new SigmoidalActivation();
+}
+
+Neuron::Neuron(Activation *function) {
+    Input = 0;
+    Output = 0;
+    Propagated_Error = 0;
+
+    activation_function = function;
 }
 
 double Neuron::get_Input() const {
@@ -40,12 +50,22 @@ void Neuron::AddToInput(double newValue)
 }
 
 void Neuron::SigmoidActivationFunction(){
-    double new_output = 1 / (1 + exp(-BETA * Neuron::Input));
-    Output = new_output;
+//  double new_output = 1 / (1 + exp(-BETA * Neuron::Input));
+//  Output = new_output;
+
+//  SigmoidalActivation sigm;
+//  Output = sigm.ActivationFunction(Input);
+
+    Output = activation_function->ActivationFunction(Input);
 }
 
 double Neuron::Derivative() {
-    return Neuron::Output * (1 - Neuron::Output);
+//  return Neuron::Output * (1 - Neuron::Output);
+    
+//  SigmoidalActivation sigm;
+//  return sigm.Derivative(Input, Output);
+
+    return activation_function->Derivative(Input, Output);
 }
 
 void Neuron::AddToPropagatedError(double error) {

@@ -16,6 +16,8 @@
 #include <algorithm>
 #include <fstream>
 #include <cmath>
+
+#include "../ActivationFunction/ActiveActivationFunction.h"
 using namespace std;
 
 class NeuralNet {

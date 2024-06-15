@@ -22,32 +22,32 @@
     <ProjectGuid>{8AC99269-08FA-4DF3-9491-7BD431E5455E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>IODesignPatternsLabs</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -142,6 +142,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\ActivationFunction\ActivationFunction.h" />
+    <ClInclude Include="..\ActivationFunction\ActiveActivationFunction.h" />
+    <ClInclude Include="..\ActivationFunction\ArcTan.h" />
+    <ClInclude Include="..\ActivationFunction\ReLU.h" />
+    <ClInclude Include="..\ActivationFunction\Sigmoidal.h" />
+    <ClInclude Include="..\ActivationFunction\Tanh.h" />
     <ClInclude Include="..\Dataset.h" />
     <ClInclude Include="..\Exceptions\DifferentSizesOfVectors.h" />
     <ClInclude Include="..\Exceptions\WrongMethod.h" />
@@ -155,6 +161,12 @@
     <ClInclude Include="..\NeuralNetwork\Neuron.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\ActivationFunction\ActivationFunction.cpp" />
+    <ClCompile Include="..\ActivationFunction\ActiveActivationFunction.cpp" />
+    <ClCompile Include="..\ActivationFunction\ArcTan.cpp" />
+    <ClCompile Include="..\ActivationFunction\ReLU.cpp" />
+    <ClCompile Include="..\ActivationFunction\Sigmoidal.cpp" />
+    <ClCompile Include="..\ActivationFunction\Tanh.cpp" />
     <ClCompile Include="..\Exceptions\DifferentSizesOfVectors.cpp" />
     <ClCompile Include="..\Exceptions\WrongMethod.cpp" />
     <ClCompile Include="..\Exceptions\WrongParameterRange.cpp" />
