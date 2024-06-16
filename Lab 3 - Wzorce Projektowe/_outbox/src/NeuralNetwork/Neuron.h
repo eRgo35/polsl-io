@@ -42,7 +42,7 @@ public:
 
     void AddToInput(double Value);
 
-    void SigmoidActivationFunction();
+    void ActivationFunction();
 
     double Derivative();
 

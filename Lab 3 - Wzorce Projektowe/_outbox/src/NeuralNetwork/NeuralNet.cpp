@@ -154,7 +154,7 @@ void NeuralNet::ProcessDataForward() {
                 this->getLayers()[processed_layer + 1][RightLayerNeuron].AddToInput(single_input);
                 connections_counter++;
             }
-            this->getLayers()[processed_layer + 1][RightLayerNeuron].SigmoidActivationFunction();
+            this->getLayers()[processed_layer + 1][RightLayerNeuron].ActivationFunction();
         }
     }
     this->ResetInputs();

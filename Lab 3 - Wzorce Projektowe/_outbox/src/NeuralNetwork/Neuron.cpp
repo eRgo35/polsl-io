@@ -49,7 +49,7 @@ void Neuron::AddToInput(double newValue)
     Neuron::Input = Neuron::Input + newValue;
 }
 
-void Neuron::SigmoidActivationFunction(){
+void Neuron::ActivationFunction(){
 //  double new_output = 1 / (1 + exp(-BETA * Neuron::Input));
 //  Output = new_output;
 
