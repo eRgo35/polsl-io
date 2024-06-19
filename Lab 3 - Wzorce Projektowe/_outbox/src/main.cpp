@@ -22,7 +22,7 @@ int main() {
 
 	ActiveActivationFunction& func = ActiveActivationFunction::getFunction();
 
-	Activation* sel = new ReLUActivation();
+	Activation* sel = nullptr;
 
 	char choice;
 
@@ -47,6 +47,7 @@ int main() {
 		break;
 	case '1':
 	default:
+		sel = new ReLUActivation();
 		break;
 	}
 
@@ -71,6 +72,8 @@ int main() {
 	auto end = std::chrono::high_resolution_clock::now();
 	std::chrono::duration<double> diff = end - start;
 	printf("\nTime measured: %.3f seconds.\n", diff.count());
+	
+	delete[] sel;
 
 	return 0;
 }
